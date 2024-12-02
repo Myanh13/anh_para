@@ -1,0 +1,543 @@
+.head_admin{
+}
+.Navigation{
+    padding-left: 15px;
+    margin-bottom: 10px;
+    color: #dfebff;
+}
+.admin_main{
+    width: 79%;
+    float: right;
+}
+.container_admin_para {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar Styling */
+.sidebar_admin_para {
+    width: 20%;
+    background-color: #062544;
+    color: white;
+    padding-top: 20px;
+    position: fixed;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: width 0.3s ease-in-out;
+}
+
+.logo_admin_para img{
+    height: 100px;
+
+}
+.sidebar_admin_para .logo_admin_para {
+    text-align: center;
+    margin-bottom: 5px;
+    border-bottom: -0.25px solid #fff;
+}
+
+.sidebar_admin_para .logo_admin_para h2 {
+    font-size: 40px;
+    color: #fff;
+    font-weight: 400;
+    font-style: normal;
+   
+
+}
+
+.sidebar_admin_para .navigation_admin_para ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.sidebar_admin_para .navigation_admin_para ul li {
+    margin: 10px 0;
+    position: relative;
+}
+
+.sidebar_admin_para .navigation_admin_para ul li a {
+    display: block;
+    color: #70809a;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.sidebar_admin_para .navigation_admin_para ul li a:hover {
+    background-color: #34495e;
+    color: #33b0e0;
+}
+
+.sidebar_admin_para .badge_admin_para {
+    background-color: #e74c3c;
+    border-radius: 50%;
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+    margin-left: 10px;
+}
+
+/* Sub-menu (hidden by default) */
+.sub-menu_admin_para {
+    display: none;
+    list-style-type: none;
+    padding-left: 20px;
+    margin-top: 5px;
+    background-color: #34495e;
+    border-radius: 5px;
+    transition: transform 0.4s ease, opacity 0.4s ease-in-out;
+    transform: translateX(-100%); /* Start off-screen on the left */
+    opacity: 0;
+}
+
+.sub-menu_admin_para li a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.sub-menu_admin_para li a:hover {
+    background-color: #16a085;
+}
+
+/* Main Content Styling */
+.main-content_admin_para {
+    width: 80%;
+    float: right;
+    flex: 1;
+    padding: 20px;
+    background-color: #ecf0f1;
+    height: 100px;
+}
+
+contens {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+contens .header-left_admin_para {
+    display: flex;
+    align-items: center;
+}
+
+contens .header-left_admin_para button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #34495e;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+contens .header-left_admin_para input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 250px;
+}
+
+contens .header-right_admin_para {
+    display: flex;
+    align-items: center;
+}
+
+contens .header-right_admin_para span {
+    margin-right: 15px;
+    font-size: 14px;
+    color: #34495e;
+}
+
+contens .notifications_admin_para {
+    position: relative;
+    cursor: pointer;
+}
+
+contens .notifications_admin_para .badge_admin_para {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #e74c3c;
+    color: white;
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+.content_admin_para {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* table */
+/* Wrapper for the table */
+.admin_table_pra_wrapper {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Title of the table */
+.admin_table_pra_title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Table styles */
+.admin_table_pra {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.admin_table_pra th, .admin_table_pra td {
+    padding: 5px 5px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+/* Header row styles */
+.admin_table_pra th {
+    background-color: #05407D;
+    color: white;
+    font-weight: bold;
+}
+
+/* Odd row background color */
+.admin_table_pra tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+/* Hover effect for rows */
+.admin_table_pra tr:hover {
+    background-color: #e0e0e0;
+}
+
+/* Column specific styling */
+.admin_table_pra_image img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.admin_table_pra_price {
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.admin_table_pra_status {
+    font-weight: bold;
+    color: #28a745;
+}
+
+.admin_table_pra_description {
+    text-align: left;
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* .admin_table_pra_description:hover {
+    overflow: visible;
+    white-space: normal;
+    background-color: #f9f9f9;
+    z-index: 1;
+} */
+
+/* Function buttons */
+.admin_table_pra_function {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btn_table_admin {
+    background-color: #34db87;
+    border: none;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Red delete button */
+.btn-danger_table_admin {
+    background-color: #e74c3c;
+    border: none;
+    margin-right: 10px;
+}
+
+/* Blue edit button */
+.btn-primary_table_admin {
+    background-color: #3498db;
+    border: none;
+}
+
+.tooltip_table_admin {
+    position: relative;
+    display: inline-block;
+    display: flex;
+    justify-content: end;
+}
+
+.tooltiptext_table_admin {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip_table_admin:hover .tooltiptext_table_admin {
+    visibility: visible;
+    opacity: 1;
+}
+/* add form */
+.container_admin_pra {
+    max-width: 800px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form-group_admin_pra {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 15px;
+}
+.form-group_admin_pra label {
+    flex: 1;
+    margin-right: 10px;
+    align-items: center;
+    display: flex;
+}
+.form-group_admin_pra input, .form-group_admin_pra textarea {
+    flex: 2;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form-group_admin_pra textarea {
+    resize: vertical;
+}
+.form-group_admin_pra button {
+    width: 15%;
+    padding: 10px;
+    background-color: #05407D;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form-group_admin_pra button:hover {
+    background-color: #05407D;
+}
+.admin_table_pra_image img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+
+/* table don hàng */
+.admin_table_pra_wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+.admin_table_pra_title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.admin_table_pra {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  text-align: left;
+  background-color: #f9f9f9;
+}
+
+.admin_table_pra thead tr {
+  background-color: #4CAF50;
+  color: white;
+  text-transform: uppercase;
+}
+
+.admin_table_pra th,
+.admin_table_pra td {
+  padding: 12px 5px;
+  border: 1px solid #ddd;
+  white-space: nowrap; /* Tránh xuống dòng cho nội dung dài */
+}
+
+.admin_table_pra th {
+  font-weight: 600;
+  text-align: center;
+}
+
+.admin_table_pra td {
+  color: #333;
+}
+
+.admin_table_pra tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.admin_table_pra tbody tr:hover {
+  background-color: #e8f5e9;
+  cursor: pointer;
+}
+
+.admin_table_pra_id,
+.admin_table_pra_name,
+.admin_table_pra_sdt,
+.admin_table_pra_function {
+  text-align: center;
+}
+
+.green-text {
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .admin_table_pra_wrapper {
+      padding: 10px;
+  }
+  .admin_table_pra th, .admin_table_pra td {
+      font-size: 12px;
+      padding: 8px 6px;
+  }
+  .admin_table_pra_title {
+      font-size: 18px;
+  }
+}
+
+/* thong ke */
+/* Content */
+.content {
+  padding: 20px;
+  flex: 1;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.card {
+  flex: 1;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.card p {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Tables */
+.tables {
+  margin-top: 30px;
+}
+
+.table-container {
+  margin-bottom: 30px;
+}
+
+.table-container h3 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background: #f0f0f0;
+  font-weight: bold;
+}
+
+td {
+  background: #fff;
+}
+
+/* Chart */
+.chart {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.chart-placeholder {
+  height: 300px;
+  background: #eaeaea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}

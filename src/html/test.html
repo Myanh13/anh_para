@@ -1,0 +1,38 @@
+<div className="profile-container_infor_nguoidung">
+    <div className="profile-card_infor_nguoidung">
+      <div className="profile-avatar_infor_nguoidung">
+        <img src="../../image/user2.png" alt="Avatar" />
+        {/* Icon đổi avatar với input file */}
+        <div className="change-avatar-icon">
+          <label htmlFor="avatar-upload">
+            <i className="fa-regular fa-image"></i>
+          </label>
+          <input
+            type="file"
+            id="avatar-upload"
+            accept="image/*"
+            style={{ display: "none" }}
+            onChange={handleAvatarChange}
+          />
+        </div>
+      </div>
+      <div className="profile-info_infor_nguoidung">
+        <h2>
+          {user.id_user}. {user.ten_user}
+        </h2>
+        <p>
+          <span className="icon_infor_nguoidung">
+            <i className="fa-solid fa-phone"></i>
+          </span>{" "}
+          {user.sdt_user}
+        </p>
+        <p>
+          <span className="icon_infor_nguoidung">
+            <i className="fa-solid fa-envelope"></i>
+          </span>{" "}
+          {user.email_user}
+        </p>
+      </div>
+    </div>
+  </div>
+  
